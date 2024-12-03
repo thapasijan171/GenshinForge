@@ -8,6 +8,7 @@ class artifactLoadout {
     bonusDef: number
     bonusHp: number
     bonusElemDmg: number
+
     constructor() {
         this.flower = blankArtifact()
         this.feather = blankArtifact()
