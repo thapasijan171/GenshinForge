@@ -1,21 +1,21 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'GenshinForge',
-  description: 'A Genshin Impact Damage Calculator',
+    title: 'GenshinForge',
+    description: 'A Genshin Impact Damage Calculator',
 }
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+    return (
+        <html lang="en">
+            <body className={inter.className}>{children}</body>
+        </html>
+    )
 }
